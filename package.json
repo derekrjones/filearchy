@@ -4,7 +4,8 @@
   "description": "Pretty print file trees with a compact readable structure and coloring",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report text -- -R spec"
   },
   "keywords": [
     "glob",
