@@ -29,6 +29,61 @@ C:/projects/node_modules/filearchy/node_modules/
 │   │ ├── readme.md
 │   │ └── node_modules/ansi-regex/readme.md
 │   └── supports-color/readme.md
+├─┬ coveralls/
+│ ├── README.md
+│ └─┬ node_modules/
+│   ├─┬ js-yaml/
+│   │ ├── HISTORY.md
+│   │ ├── README.md
+│   │ └─┬ node_modules/
+│   │   ├─┬ argparse/
+│   │   │ ├── HISTORY.md
+│   │   │ ├── README.md
+│   │   │ └── node_modules/underscore/README.md
+│   │   └── esprima/README.md
+│   ├── lcov-parse/README.md
+│   ├── log-driver/README.md
+│   └─┬ request/
+│     ├── CHANGELOG.md
+│     ├── README.md
+│     └─┬ node_modules/
+│       ├── aws-sign2/README.md
+│       ├── forever-agent/README.md
+│       ├─┬ form-data/
+│       │ ├── Readme.md
+│       │ └─┬ node_modules/
+│       │   ├── async/README.md
+│       │   ├─┬ combined-stream/
+│       │   │ ├── Readme.md
+│       │   │ └── node_modules/delayed-stream/Readme.md
+│       │   └── mime/README.md
+│       ├─┬ hawk/
+│       │ ├── README.md
+│       │ └─┬ node_modules/
+│       │   ├── boom/README.md
+│       │   ├── cryptiles/README.md
+│       │   ├── hoek/README.md
+│       │   └── sntp/README.md
+│       ├─┬ http-signature/
+│       │ ├── http_signing.md
+│       │ ├── README.md
+│       │ └─┬ node_modules/
+│       │   ├── asn1/README.md
+│       │   └── assert-plus/README.md
+│       ├── json-stringify-safe/README.md
+│       ├─┬ mime-types/
+│       │ ├── README.md
+│       │ └── SOURCES.md
+│       ├─┬ node-uuid/
+│       │ ├── LICENSE.md
+│       │ └── README.md
+│       ├── oauth-sign/README.md
+│       ├── qs/README.md
+│       ├── stringstream/README.md
+│       ├─┬ tough-cookie/
+│       │ ├── README.md
+│       │ └── node_modules/punycode/README.md
+│       └── tunnel-agent/README.md
 ├─┬ glob/
 │ ├── README.md
 │ └─┬ node_modules/
@@ -47,6 +102,67 @@ C:/projects/node_modules/filearchy/node_modules/
 ├─┬ glob-all/
 │ ├── CONTRIBUTING.md
 │ └── README.md
+├─┬ istanbul/
+│ ├── CHANGELOG.md
+│ ├── README.md
+│ ├── yui-coverage-comparison.md
+│ └─┬ node_modules/
+│   ├─┬ abbrev/
+│   │ ├── CONTRIBUTING.md
+│   │ └── README.md
+│   ├── async/README.md
+│   ├─┬ escodegen/
+│   │ ├── README.md
+│   │ └─┬ node_modules/
+│   │   ├── esprima/README.md
+│   │   ├── estraverse/README.md
+│   │   ├── esutils/README.md
+│   │   └─┬ source-map/
+│   │     ├── CHANGELOG.md
+│   │     ├── README.md
+│   │     └── node_modules/amdefine/README.md
+│   ├── esprima/README.md
+│   ├─┬ fileset/
+│   │ ├── README.md
+│   │ └─┬ node_modules/
+│   │   ├─┬ glob/
+│   │   │ ├── README.md
+│   │   │ └─┬ node_modules/
+│   │   │   ├── inherits/README.md
+│   │   │   └─┬ minimatch/
+│   │   │     ├── README.md
+│   │   │     └─┬ node_modules/
+│   │   │       ├── lru-cache/README.md
+│   │   │       └── sigmund/README.md
+│   │   └─┬ minimatch/
+│   │     ├── README.md
+│   │     └─┬ node_modules/
+│   │       ├── lru-cache/README.md
+│   │       └── sigmund/README.md
+│   ├─┬ handlebars/
+│   │ ├── release-notes.md
+│   │ └─┬ node_modules/uglify-js/
+│   │   ├── README.md
+│   │   └─┬ node_modules/
+│   │     ├── async/README.md
+│   │     └─┬ source-map/
+│   │       ├── CHANGELOG.md
+│   │       ├── README.md
+│   │       └── node_modules/amdefine/README.md
+│   ├─┬ js-yaml/
+│   │ ├── HISTORY.md
+│   │ ├── README.md
+│   │ └─┬ node_modules/
+│   │   ├─┬ argparse/
+│   │   │ ├── HISTORY.md
+│   │   │ ├── README.md
+│   │   │ └── node_modules/underscore/README.md
+│   │   └── esprima/README.md
+│   ├── nopt/README.md
+│   ├─┬ once/
+│   │ ├── README.md
+│   │ └── node_modules/wrappy/README.md
+│   └── which/README.md
 ├── lodash/README.md
 ├─┬ mocha/
 │ ├── README.md

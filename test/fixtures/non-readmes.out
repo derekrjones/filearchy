@@ -9,7 +9,29 @@ C:/projects/node_modules/filearchy/node_modules/
 │     ├── History.md
 │     └── node_modules/type-detect/History.md
 ├── glob-all/CONTRIBUTING.md
+├─┬ istanbul/
+│ ├── CHANGELOG.md
+│ ├── yui-coverage-comparison.md
+│ └─┬ node_modules/
+│   ├── abbrev/CONTRIBUTING.md
+│   ├─┬ handlebars/
+│   │ ├── release-notes.md
+│   │ └── node_modules/uglify-js/node_modules/source-map/CHANGELOG.md
+│   ├─┬ js-yaml/
+│   │ ├── HISTORY.md
+│   │ └── node_modules/argparse/HISTORY.md
+│   └── escodegen/node_modules/source-map/CHANGELOG.md
 ├── path-sort/LICENSE.md
+├─┬ coveralls/node_modules/
+│ ├─┬ js-yaml/
+│ │ ├── HISTORY.md
+│ │ └── node_modules/argparse/HISTORY.md
+│ └─┬ request/
+│   ├── CHANGELOG.md
+│   └─┬ node_modules/
+│     ├── http-signature/http_signing.md
+│     ├── mime-types/SOURCES.md
+│     └── node-uuid/LICENSE.md
 └─┬ mocha/node_modules/
   ├── debug/History.md
   ├── growl/History.md
