@@ -21,8 +21,7 @@ describe("array", function(){
     var res = filearchy(arr, opts);
 
     var comp = compareFixture('arr-single.out', res);
-    //expect(res, [res,comp.src].join("\n\n")).to.satisfy(comp,comp.src);
-    expect(res).to.satisfy(comp,compareMessage(comp,res));
+    expect(res).to.satisfy(comp, compareMessage(comp, res));
   })
   it("should print multiple arrays", function(){
     var arr = [
@@ -33,7 +32,7 @@ describe("array", function(){
     var res = filearchy(arr, opts);
 
     var comp = compareFixture('arr-multiple.out', res);
-    expect(res, res).to.satisfy(comp);
+    expect(res).to.satisfy(comp, compareMessage(comp, res));
   })
   it.skip("should print trees", function(){
     var tree = {
@@ -60,7 +59,7 @@ describe("array", function(){
     }
     var res = filearchy(tree, opts);
     var comp = compareFixture('tree.out', res);
-    expect(res, res).to.satisfy(comp);
+    expect(res).to.satisfy(comp, compareMessage(comp, res));
   })
 })
 
@@ -81,7 +80,7 @@ describe("glob", function(){
     expect(res).to.contain('lodash')
 
     var comp = compareFixture('markdown.out', res, globComparer);
-    expect(res, res).to.satisfy(comp);
+    expect(res).to.satisfy(comp, compareMessage(comp, res));
   })
   it("should handle array of globs", function(){
     var pattern = ['**/node_modules/*/*.md', '!**/lodash/*.md', '!**/README.md'];
@@ -95,15 +94,13 @@ describe("glob", function(){
     expect(res).to.not.contain('lodash')
 
     var comp = compareFixture('non-readmes.out', res, globComparer);
-    expect(res, res).to.satisfy(comp);
+    expect(res).to.satisfy(comp, compareMessage(comp, res));
   })
 })
 
-function compareMessage(comp,res){
-  var out = ['','EXPECTED',comp.src,'','ACTUAL',res,'']
-  out = out
-    .map(JSON.stringify)
-    .join("\n");
+function compareMessage(comp, res){
+  var out = ['', 'EXPECTED', comp.src, 'ACTUAL', res]
+  out = out.join("\n\n");
   return out;
 }
 
