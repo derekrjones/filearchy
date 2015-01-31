@@ -29,7 +29,7 @@ var DEFAULTS = {
     '.jpg': 'red'
   },
   compact: false,
-  nocase: true
+  noCase: true
 };
 
 module.exports = function(arr, opts){
@@ -87,7 +87,13 @@ function treeify(arr, opts){
 
     limit(root, opts.depth);
 
-    return archy(root);
+    var res = archy(root);
+
+    // TODO colors, should not be added in first place
+    if(!opts.color){
+      res = stripColors(res);
+    }
+    return res;
 
   } catch(err){
     console.log(err.stack);
@@ -417,6 +423,10 @@ function color(str, clr, extension){
 function stringify(obj){
   return JSON.stringify(obj, null, 2).replace(/\\u.{4}\[\d{2}m/g, '')
 }
+
+/*function stripColor(s){
+  return s.replace(/\u001b\[\d{2}m/gi,"")
+}*/
 
 function stripColors(s){
   return chalk.stripColor(s);

@@ -1,4 +1,4 @@
-var expect = require("chai").use(require('chai-fs')).expect
+var expect = require("chai").expect
 
 var path = require('path')
 var _ = require('lodash')
@@ -14,14 +14,15 @@ var fixtures = require('./fixtures');
 describe("array", function(){
   var opts;
   before(function(){
-    opts = {resolve: false};
+    opts = {resolve: false, color: false};
   })
   it("should print a single array", function(){
     var arr = ['a/b/c', 'a/b/c', 'a/b/c2/d'];
     var res = filearchy(arr, opts);
 
     var comp = compareFixture('arr-single.out', res);
-    expect(res, res).to.satisfy(comp);
+    //expect(res, [res,comp.src].join("\n\n")).to.satisfy(comp,comp.src);
+    expect(res).to.satisfy(comp,compareMessage(comp,res));
   })
   it("should print multiple arrays", function(){
     var arr = [
@@ -66,13 +67,13 @@ describe("array", function(){
 describe("glob", function(){
   var opts;
   before(function(){
-    opts = {cwd: HOME, nocase: true};
+    opts = {cwd: HOME, nocase: true, color: false};
   })
   it("should handle string glob", function(){
     var pattern = '**/node_modules/*/*.md';
     var globs = glob.sync(pattern, opts);
 
-    var globRes = filearchy(globs);
+    var globRes = filearchy(globs, opts);
     var res = filearchy(pattern, opts);
 
     expect(res).to.be.equal(globRes);
@@ -86,7 +87,7 @@ describe("glob", function(){
     var pattern = ['**/node_modules/*/*.md', '!**/lodash/*.md', '!**/README.md'];
     var globs = glob.sync(pattern.slice(), opts);
 
-    var globRes = filearchy(globs);
+    var globRes = filearchy(globs, opts);
     var res = filearchy(pattern, opts);
 
     expect(res).to.be.equal(globRes);
@@ -98,9 +99,20 @@ describe("glob", function(){
   })
 })
 
+function compareMessage(comp,res){
+  var out = ['','EXPECTED',comp.src,'','ACTUAL',res,'']
+  out = out
+    .map(JSON.stringify)
+    .join("\n");
+  return out;
+}
+
 function compareFixture(name, src, compareFn){
   compareFn = compareFn || stringComparer;
-  return compareFn(fixtures(name, src))
+  var fix = fixtures(name, src);
+  var comp = compareFn(fix)
+  comp.src = fix;
+  return comp;
 }
 
 function stringComparer(src){
