@@ -46,22 +46,7 @@ C:/projects/node_modules/filearchy/node_modules/
 │     └── node_modules/wrappy/README.md
 ├─┬ glob-all/
 │ ├── CONTRIBUTING.md
-│ ├── README.md
-│ └─┬ node_modules/glob/
-│   ├── README.md
-│   └─┬ node_modules/
-│     ├─┬ inflight/
-│     │ ├── README.md
-│     │ └── node_modules/wrappy/README.md
-│     ├── inherits/README.md
-│     ├─┬ minimatch/
-│     │ ├── README.md
-│     │ └─┬ node_modules/brace-expansion/
-│     │   ├── README.md
-│     │   └── node_modules/balanced-match/README.md
-│     └─┬ once/
-│       ├── README.md
-│       └── node_modules/wrappy/README.md
+│ └── README.md
 ├── lodash/README.md
 ├─┬ mocha/
 │ ├── README.md

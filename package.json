@@ -26,5 +26,16 @@
     "mocha": "^2.0.1",
     "chai": "1.10.0",
     "chai-fs": "^0.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://derekrjones@github.com/derekrjones/filearchy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/derekrjones/filearchy/issues"
+  },
+  "homepage": "https://github.com/derekrjones/filearchy"
 }
