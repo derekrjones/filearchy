@@ -1,0 +1,18 @@
+C:/projects/node_modules/filearchy/node_modules/
+├─┬ chai/
+│ ├── CONTRIBUTING.md
+│ ├── History.md
+│ ├── ReleaseNotes.md
+│ └─┬ node_modules/
+│   ├── assertion-error/History.md
+│   └─┬ deep-eql/
+│     ├── History.md
+│     └── node_modules/type-detect/History.md
+├── glob-all/CONTRIBUTING.md
+├── path-sort/LICENSE.md
+└─┬ mocha/node_modules/
+  ├── debug/History.md
+  ├── growl/History.md
+  └─┬ jade/
+    ├── jade.md
+    └── node_modules/commander/History.md

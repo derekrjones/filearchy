@@ -1,0 +1,96 @@
+C:/projects/node_modules/filearchy/node_modules/
+├─┬ chai/
+│ ├── CONTRIBUTING.md
+│ ├── History.md
+│ ├── README.md
+│ ├── ReleaseNotes.md
+│ └─┬ node_modules/
+│   ├─┬ assertion-error/
+│   │ ├── History.md
+│   │ └── README.md
+│   └─┬ deep-eql/
+│     ├── History.md
+│     ├── README.md
+│     └─┬ node_modules/type-detect/
+│       ├── History.md
+│       └── README.md
+├─┬ chai-fs/
+│ ├── README.md
+│ └── node_modules/bit-mask/README.md
+├─┬ chalk/
+│ ├── readme.md
+│ └─┬ node_modules/
+│   ├── ansi-styles/readme.md
+│   ├── escape-string-regexp/readme.md
+│   ├─┬ has-ansi/
+│   │ ├── readme.md
+│   │ └── node_modules/ansi-regex/readme.md
+│   ├─┬ strip-ansi/
+│   │ ├── readme.md
+│   │ └── node_modules/ansi-regex/readme.md
+│   └── supports-color/readme.md
+├─┬ glob/
+│ ├── README.md
+│ └─┬ node_modules/
+│   ├─┬ inflight/
+│   │ ├── README.md
+│   │ └── node_modules/wrappy/README.md
+│   ├── inherits/README.md
+│   ├─┬ minimatch/
+│   │ ├── README.md
+│   │ └─┬ node_modules/brace-expansion/
+│   │   ├── README.md
+│   │   └── node_modules/balanced-match/README.md
+│   └─┬ once/
+│     ├── README.md
+│     └── node_modules/wrappy/README.md
+├─┬ glob-all/
+│ ├── CONTRIBUTING.md
+│ ├── README.md
+│ └─┬ node_modules/glob/
+│   ├── README.md
+│   └─┬ node_modules/
+│     ├─┬ inflight/
+│     │ ├── README.md
+│     │ └── node_modules/wrappy/README.md
+│     ├── inherits/README.md
+│     ├─┬ minimatch/
+│     │ ├── README.md
+│     │ └─┬ node_modules/brace-expansion/
+│     │   ├── README.md
+│     │   └── node_modules/balanced-match/README.md
+│     └─┬ once/
+│       ├── README.md
+│       └── node_modules/wrappy/README.md
+├── lodash/README.md
+├─┬ mocha/
+│ ├── README.md
+│ └─┬ node_modules/
+│   ├── commander/Readme.md
+│   ├─┬ debug/
+│   │ ├── History.md
+│   │ ├── Readme.md
+│   │ └── node_modules/ms/README.md
+│   ├── diff/README.md
+│   ├── escape-string-regexp/readme.md
+│   ├─┬ glob/
+│   │ ├── README.md
+│   │ └─┬ node_modules/
+│   │   ├── graceful-fs/README.md
+│   │   ├── inherits/README.md
+│   │   └─┬ minimatch/
+│   │     ├── README.md
+│   │     └─┬ node_modules/
+│   │       ├── lru-cache/README.md
+│   │       └── sigmund/README.md
+│   ├─┬ growl/
+│   │ ├── History.md
+│   │ └── Readme.md
+│   └─┬ jade/
+│     ├── jade.md
+│     └─┬ node_modules/commander/
+│       ├── History.md
+│       └── Readme.md
+└─┬ path-sort/
+  ├── LICENSE.md
+  └── README.md

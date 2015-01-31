@@ -1,0 +1,30 @@
+{
+  "name": "filearchy",
+  "version": "0.0.0",
+  "description": "Pretty print file trees with a compact readable structure and coloring",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "glob",
+    "arch",
+    "tree",
+    "filetree"
+  ],
+  "author": "Derek Jones <contact.derekjones@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.0.1",
+    "archy": "^1.0.0",
+    "chalk": "^0.5.1",
+    "path-sort": "^0.1.0",
+    "glob-all": "^3.0.1",
+    "glob": "^4.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "chai": "1.10.0",
+    "chai-fs": "^0.1.0"
+  }
+}
